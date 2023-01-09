@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container-fluid" style="margin-top:50px">
+  <div class="row">
+    <div class="col-md-4 my-3 mx-auto">
+      <h3 class="text-center alertt alert-infoo">Dashboard</h3>
+    </div>
+
+    <div class="col-md-8">
+    </div>
+  </div>
+</div>
+<br><br>
+
+<div class="col-sm-12">
+  {% if user %}
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col">Incharge</th>
+        <th scope="col">User Name</th>
+
+        <th scope="col">Counter No</th>
+        <th scope="col">Waiting</th>
+        <th scope="col">Served</th>
+        <th scope="col">Missed</th>
+
+        <th scope="col">Last Login</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+
+    </thead>
+    <tbody>
+      {% for st in user %}
+      <tr>
+        <th scope="row">{{st.entry_date}}</th>
+        <td></td>
+        <td>{{st.first_name}}&nbsp;&nbsp;{{st.last_name}}</td>
+        <td>{{st.email}}</td>
+        <td>{{st.room}}</td>
+
+        {% if st.room.id == 1 %}
+        <td>{{r1_wait}}</td>
+        <td>{{r1_served}}</td>
+        <td>{{r1_missed}}</td>
+        {% elif st.room.id == 2 %}
+        <td>{{r2_wait}}</td>
+        <td>{{r2_served}}</td>
+        <td>{{r2_missed}}</td>
+        {% elif st.room.id == 3 %}
+        <td>{{r3_wait}}</td>
+        <td>{{r3_served}}</td>
+        <td>{{r3_missed}}</td>
+        {% elif st.room.id == 4 %}
+        <td>{{r4_wait}}</td>
+        <td>{{r4_served}}</td>
+        <td>{{r4_missed}}</td>
+        {% elif st.room.id == 5 %}
+        <td>{{r5_wait}}</td>
+        <td>{{r5_served}}</td>
+        <td>{{r5_missed}}</td>
+        {% elif st.room.id == 6 %}
+        <td>{{r6_wait}}</td>
+        <td>{{r6_served}}</td>
+        <td>{{r6_missed}}</td>
+        {% elif st.room.id == 7 %}
+        <td>{{r7_wait}}</td>
+        <td>{{r7_served}}</td>
+        <td>{{r7_missed}}</td>
+        {% elif st.room.id == 8 %}
+        <td>{{r8_wait}}</td>
+        <td>{{r8_served}}</td>
+        <td>{{r8_missed}}</td>
+        {% elif st.room.id == 9 %}
+        <td>{{r9_wait}}</td>
+        <td>{{r9_served}}</td>
+        <td>{{r9_missed}}</td>
+        {% elif st.room.id == 10 %}
+        <td>{{r10_wait}}</td>
+        <td>{{r10_served}}</td>
+        <td>{{r10_missed}}</td>
+        {% else %}
+        <td></td>
+        <td></td>
+        <td></td>
+        {% endif %}
+
+
+        <td>{{st.last_login}}</td>
+
+        <td></td>
+        <td></td>
+        <td>
+          <a href="{% url 'edit_assign' %}" class="btn btn-warning btn-sm">Edit..</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  {% else %}
+  <h4 class="text-center alert alert-warning">.............</h4>
+  {% endif %}
+</div>
+
+
+
+{% endblock %}

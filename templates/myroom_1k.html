@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+
+<div class="rcontainer">
+
+  <div class="rcol-1">
+    <div class="rrow">
+      <div class="rrow-1">
+        <h1 class="text-center" style = "margin-top: 65px;">Current Serving</h1>
+        <h1 class="text-center">Token No</h1>
+        <h1 class="text-center" style = "font-size: 5.5rem;">{{tok_called}}</h1>
+        <h1 class="text-center">Counter No-1</h1>
+        <h4 class="text-center">Issued at - {{issue_time}}</h4>
+      </div>
+      <div class="rrow-2">
+      </div>
+    </div>
+  </div>
+
+  <div class="rcol-2">
+    <div class="rcol2row1">
+    </div>
+    <div class="rcol2row1">
+    </div>
+    <div class="rcol2row1">
+    </div>
+    <a href="" class="rbtn">Explore Now &#8594; </a>
+    <div class="rcol2row1">
+    </div>
+    <div class="rcol2row1">
+    </div>
+    <div class="rcol2row1">
+    </div>
+  </div>
+
+  <div class="rcol-3">
+    <h2>RCOL-3</h2>
+  </div>
+
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+  setTimeout(function() {
+    location.reload();
+  }, 60000)
+</script>
+
+
+<script>
+  if (window.history.replaceState) {
+    window.history.replaceState(null, null, window.location.href);
+  }
+</script>
+
+{% endblock %}

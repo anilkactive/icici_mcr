@@ -1,0 +1,269 @@
+/* This is applicable to all html elements */
+*a{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =================== */
+.rcontainer {
+  height: 90vh;
+  color: blue;
+  display: flex;
+}
+.rcontainer div{
+  margin: 20px;
+  border: 1px #444 solid;
+  font-size: 24px;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+}
+.rcontainer divv h2{
+  padding: 40px;
+}
+.rcol-1{
+  margin: 20px;
+  flex: 0 1 50%;
+}
+.rcol-2 {
+  flex:0 1 10%;
+}
+.rcol-3{
+  flex: 0 1 40%;
+}
+
+.rrow-1{
+}
+
+.rbtn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.rbtn:hover{
+    background: #563434;
+}
+
+
+
+
+
+
+/* =============== */
+
+body {
+  /* min-height: 100vh;
+  display: flex;
+  flex-direction: column; */
+  /* background: #000; */
+}
+.hcontainer {
+  background: #f2f2f2;      /*#f2f2f2 */
+}
+.container{
+    max-width: 1300px;
+    /* margin: auto; */
+    padding-left: 25px;
+    padding-right: 25px;
+    /* background-color: #666; */
+}
+
+/* ====================== */
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 3px;
+}
+.mcol-4{
+    flex-basis: 24%;
+    min-width: 100px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0px;
+}
+.rite{                        /* Only for space after two columns */
+  margin-right: 20px
+}
+.mcol-4 h4{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 8px 10px;
+}
+.mcol-4.left h4{
+  font-size: 22px;
+}
+.mcol-4.right h4{
+  font-size: 22px;
+}
+.mcol-4.left {
+  background: radial-gradient(#cc3300,#800000);
+  color: white;
+  text-align: left;
+}
+.mcol-4.right{
+  background: radial-gradient(#fff,#ffd6d6);
+  color: #3c3c3c;
+  text-align: center;
+}
+.ltext {
+  /* font-size: 3rem;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  marginn: 10px; */
+}
+.rtext {
+  /* font-size: 3rem; */
+  padding-top: 25px;
+  padding-bottom: 30px;
+  marginn: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* ====================== */
+.ccol {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.ctkn {
+  background: #3c3c3c;
+}
+.ccol1 {
+  background: #202020;
+}
+.ccol2 {
+  background: #3c3c3c;
+}
+.ccol3 {
+  background: #202020;
+}
+.ccol4 {
+  background: #3c3c3c;
+}
+
+.ctkn_text {
+  font-size: 3rem;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  marginn: 10px;
+}
+
+
+.d_c_1 {
+  background: yellow;
+  border-radius: 10px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  border: 2px solid blue;
+}
+
+.d_c_2 {
+  background: green;
+  border-radius: 10px;
+  border: 2px solid blue;
+}
+
+.d_c_3 {
+  background: blue;
+  border-radius: 0px;
+  border: 2px solid blue;
+}
+.d_c_4 {
+  background: orange;
+  border-radius: 10px;
+  border: 2px solid blue;
+}
+
+
+
+/* lll======================================================== https://bootsnipp.com/snippets/z8aQr*/
+.c_btn {
+  margin-top: 4%;
+  margin-bottom: 8%;
+  font-weight: bold;
+}
+.c_visitor {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left: 6%;
+}
+.c_blk {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.login-container{
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.login-form-1{
+    margin-top: 0%;
+    padding-top: 8%;
+    padding-bottom: 20%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h1{
+    color: #333;
+    margin-bottom: 2%;
+}
+.login-form-2{
+    padding: 1%;
+    background: #eeeeee;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h3 {
+    text-align: center;
+    color: #444;
+    text-align: center;
+}
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login-form-1 .btnSubmit{
+    font-weight: 600;
+    color: #fff;
+    background-color: #0062cc;
+}
+.login-form-2 .btnSubmit{
+    font-weight: 600;
+    color: #0062cc;
+    background-color: #fff;
+}
+.login-form-2 .ForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.login-form-1 .ForgetPwd{
+    color: #0062cc;
+    font-weight: 600;
+    text-decoration: none;
+}

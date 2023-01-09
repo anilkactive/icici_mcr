@@ -1,0 +1,26 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 mx-auto my-4 bg-light">
+      <h2>Edit Assignment Counter</h2>
+      <form class="" action="{% url 'edit_assign' %}" method="post">
+        {% csrf_token %}
+        <!-- {{form.as_table}} -->
+        {{form.as_p}}
+        <input type="submit" class="btn-primary btn my-4" name="" value="Edit Assignment">
+      </form>
+    </div>
+  </div>
+</div>
+{% if status %}
+<script type="text/javascript">
+alert("{{status}}");
+  // window.location = "/"
+</script>
+{% endif %}
+{% endblock %}

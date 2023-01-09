@@ -1,0 +1,30 @@
+Search
+!/icicir/static, !static, !env, !backup, !accounts/migrations, !issue/migrations
+
+2022-07-10 -> Done upto Video-70-> Upto activating account thru Email
+2022-07-10 -> Done -> Forgot Password
+2022-07-10 -> Done -> Upto Authentication System
+2023-01-01 -> Done -> Creating Admin Page / Model
+                      Create Table of User with Service No(Room No)  - Done
+                      Give Access to admin to change Service for this user - Done
+                      On Login of User, they are diverted to their page of Service - Done
+2023-01-02 -> Done -> Creating Admin Dashboard to see live data/performance
+                      See data of all counters with User - Email - Counter No - Waiting no - served - missed - Done
+
+2023-01-03 ->      -> Creating single page for different rooms (with variable of room_no and not r_1,r_2,...) - Done
+                   -> Printing Token from Printer - Done
+                   -> Purchase TV - Done
+                   -> TV Screen UI - Done
+                   -> Token No Management - Done
+                   -> Counter Screen UI - Done
+                   -> Make it for 10 Counters - Done
+                   -> Doing Provisioning - Done
+
+2023-01-09 -> Next -> Hosting Site at Digital OCean
+                   -> Playing Ding-Dong
+                   -> Integrate login User to Screens
+                   -> Preparing Poster
+                   -> Stop refreshing TV Screen
+
+
+                   -> Ordering Printer - ??

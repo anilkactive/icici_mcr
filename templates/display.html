@@ -1,0 +1,119 @@
+{% extends 'base_display.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid">
+  <div class="row ">
+    <div class="col-md-3 px=0 ccol2 ccol text-center">
+      <h4 class="ctkn_text">Counter-1</h4>
+    </div>
+    <div class="col-md-3 px=0 ccol1 ccol text-center">
+      <h4 class="ctkn_text">{{room_1}}</h4>
+    </div>
+    <div class="col-md-3 px=0 ccol4 ccol text-center">
+      <h4 class="ctkn_text">Counter-6</h4>
+    </div>
+    <div class="col-md-3 px=0 ccol3 ccol text-center">
+      <h4 class="ctkn_text">{{room_5}}</h4>
+    </div>
+  </div>
+
+  <div class="row ">
+    <div class="col-md-3 px=0 ccol2 ccol text-center">
+      <h4 class="ctkn_text">Counter-2</h4>
+    </div>
+    <div class="col-md-3 px=0 ccol1 ccol text-center">
+      <h4 class="ctkn_text">{{room_2}}</h4>
+    </div>
+    <div class="col-md-3 px=0 ccol4 ccol text-center">
+      <h4 class="ctkn_text">Counter-7</h4>
+    </div>
+    <div class="col-md-3 px=0 ccol3 ccol text-center">
+      <h4 class="ctkn_text">{{room_6}}</h4>
+    </div>
+  </div>
+
+  <div class="row ">
+    <div class="col-md-3 px=0 ccol2 ccol text-center">
+      <h4 class="ctkn_text">Counter-3</h4>
+    </div>
+    <div class="col-md-3 px=0 ccol1 ccol text-center">
+      <h4 class="ctkn_text">{{room_3}}</h4>
+    </div>
+    <div class="col-md-3 px=0 ccol4 ccol text-center">
+      <h4 class="ctkn_text">Counter-8</h4>
+    </div>
+    <div class="col-md-3 px=0 ccol3 ccol text-center">
+      <h4 class="ctkn_text">{{room_7}}</h4>
+    </div>
+  </div>
+
+  <div class="row ">
+    <div class="col-md-3 px=0 ccol2 ccol text-center">
+      <h4 class="ctkn_text">Counter-4</h4>
+    </div>
+    <div class="col-md-3 px=0 ccol1 ccol text-center">
+      <h4 class="ctkn_text">{{room_4}}</h4>
+    </div>
+    <div class="col-md-3 px=0 ccol4 ccol text-center">
+      <h4 class="ctkn_text">Counter-9</h4>
+    </div>
+    <div class="col-md-3 px=0 ccol3 ccol text-center">
+      <h4 class="ctkn_text">{{room_8}}</h4>
+    </div>
+  </div>
+
+  <div class="row ">
+    <div class="col-md-3 px=0 ccol2 ccol text-center">
+      <h4 class="ctkn_text">Counter-5</h4>
+    </div>
+    <div class="col-md-3 px=0 ccol1 ccol text-center">
+      <h4 class="ctkn_text">{{room_5}}</h4>
+    </div>
+    <div class="col-md-3 px=0 ccol4 ccol text-center">
+      <h4 class="ctkn_text">Counter-10</h4>
+    </div>
+    <div class="col-md-3 px=0 ccol3 ccol text-center">
+      <h4 class="ctkn_text">{{room_8}}</h4>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="row cRow2">
+  <!-- <h2><marqueee width="100%">Please check your token here. </marqueee></h2> -->
+  <h2>
+    <a href={% url 'login' %} class="brand-wrapppp">
+      <img class="logo" src="{% static '/images/footer.png' %}">
+    </a> <!-- brand-wrap.// -->
+
+  </h2>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+  setTimeout(function() {
+    location.reload();
+  },2000)
+</script>
+
+
+<script>
+  if (window.history.replaceState) {
+    window.history.replaceState(null, null, window.location.href);
+  }
+</script>
+
+</body>
+</html>
+{% endblock %}
